@@ -1,0 +1,137 @@
+mixin slider__element(_folder, _prefix, _img, _num_img, _extension, _alt, _element, _hide)
+    ._ex-slider__element(class= _element +" "+ _hide)
+        a(href="#")
+            img(src="img/products/"+_folder+"/"+_prefix+"-"+_img+"/"+_img+"_"+_num_img+"."+_extension class= _hide alt="_slider-"+_alt)
+mixin exemplar
+    ._exemplar
+        hr
+        ._choose-width
+            p Виберіть ширину дверей:
+            form
+                span 60см
+                    input(name="width-door" type="radio" value="60" checked)
+                span 70см 
+                    input(name="width-door" type="radio" value="70")
+                span 80см
+                    input(name="width-door" type="radio" value="80")
+                span 90см
+                    input(name="width-door" type="radio" value="90")
+                p    
+                    input(type="submit" class="btn btn-success" value="Купити") 
+        hr   
+        .container-fluid
+            .row
+                div(class="col-lg-2 col-md-2 col-sm-2 hidden-xs")
+                    ._ex_slider
+                        ._ex_reloader
+                            i(class="fa fa-refresh fa-3x fa-fw")
+                            
+                        button(class="_ex_arrow" id="_ex_up")
+                            i(class="fa fa-chevron-up" aria-hidden="true")
+                        button(class="_ex_arrow" id="_ex_down")
+                            i(class="fa fa-chevron-down" aria-hidden="true")
+                        +slider__element("doors", "d", "00001", "1", "jpg", "1", "_element_1", "view")
+                        +slider__element("doors", "d", "00002", "1", "jpg", "2", "_element_2", "view")
+                        +slider__element("doors", "d", "00003", "1", "jpg", "3", "_element_3", "view")
+                        +slider__element("doors", "d", "00004", "1", "jpg", "4", "_element_4", "_hide")
+                        +slider__element("doors", "d", "00005", "1", "jpg", "5", "_element_5", "_hide")
+                        +slider__element("doors", "d", "00006", "1", "jpg", "6", "_element_6", "_hide")
+                        +slider__element("doors", "d", "00007", "1", "jpg", "7", "_element_7", "_hide")
+                        +slider__element("doors", "d", "00008", "1", "jpg", "8", "_element_8", "_hide")
+                        +slider__element("doors", "d", "00009", "1", "jpg", "9", "_element_9", "_hide")
+                        +slider__element("doors", "d", "00010", "1", "jpg", "10", "_element_10", "_hide")
+                        br
+                ._exemplar-img__container(class="col-lg-4 col-md-4 col-sm-4 col-xs-6")
+                    ._exemplar-img__main
+                        img(src="img/products/doors/d-00001/00001_1.jpg" alt="00001")
+                        p(class="_ordered-cart") Добавлено в кошик
+                        br
+                        p(class="_ordered-cart") Замовлено
+                    ._exemplar-img__small
+                        div(class="col-lg-6 col-md-6 col-sm-6 col-xs-6 _ex_left")
+                            i(class="fa fa-chevron-left")
+                        div(class="col-lg-6 col-md-6 col-sm-6 col-xs-6 _ex_right")
+                            i(class="fa fa-chevron-right")
+                ._exemplar-des__container(class="col-lg-5 col-md-5 col-sm-5 col-xs-6")
+                    ._exemplar-des
+                        p(class="_ex_id") Id: 00001
+                        p(class="_ex_price") Ціна: 
+                            span 819 
+                            |грн
+                        p(class="_ex_parameters") Новий стиль   
+                        p(class="_ex_parameters") В наявності  
+                        p(class="_ex_parameters") Міжкімнатні 
+                        p(class="_ex_parameters") Глухі 
+                        p(class="_ex_parameters") Колір: 
+                            span  коричневий
+                        ._additionally
+                            h4 Додатково добавити:
+                            div(id="accordion" class="panel-group")
+                                div(class="panel panel-default")
+                                    .panel-heading
+                                        div(class="panel-title")
+                                            div
+                                                a(href="#collapse-1" data-parent="#accordion"  data-toggle="collapse") Коробку 
+                                            div
+                                                i(class="fa fa-check" aria-hidden="true")
+                                            
+                                    div(id="collapse-1" class="panel-collapse collapse in")
+                                        div(class="panel-body")
+                                            button(class="btn btn-default" type="button" data-toggle="modal" data-target="#modal-1") підказка -  як замовити
+                                            //a(href="#")
+                                                //p Детально про коробку
+                                            p Виберіть розмір:
+                                            form
+                                                select
+                                                    option 	&nbsp; 60мм (+400 грн )
+                                                    option 	&nbsp; 80мм (+400 грн )
+                                                    option 100мм (+400 грн )
+                                                    option 120мм (+400 грн )
+                                                ._filters            
+                                                    label
+                                                        input(class="cb pristine" type="checkbox")
+                                                        span З порогом
+                                                    label
+                                                        input(class="cb pristine" type="checkbox")
+                                                        span Сформувати комплект
+                                                button(type="submit" class="btn btn-info") В кошик   
+                                            
+                                div(class="panel panel-default")
+                                    .panel-heading
+                                        div(class="panel-title")
+                                            div
+                                                a(href="#collapse-2" data-parent="#accordion"  data-toggle="collapse") Шалівку 
+                                            div
+                                                i(class="fa fa-check" aria-hidden="true")
+                                    div(id="collapse-2" class="panel-collapse collapse")
+                                        div(class="panel-body")
+                                            a(href="#")
+                                                p Детально
+                                            a(href="#" class="btn btn-info") В кошик   
+                                div(class="panel panel-default")
+                                    .panel-heading
+                                        div(class="panel-title")
+                                            div
+                                                a(href="#collapse-3" data-parent="#accordion"  data-toggle="collapse") Добор 
+                                            div
+                                                i(class="fa fa-check" aria-hidden="true")
+                                        
+                                    div(id="collapse-3" class="panel-collapse collapse")
+                                        div(class="panel-body")
+                                            a(href="#")
+                                                p Детально
+                                            p Виберіть ширину планки:
+                                            form
+                                                select
+                                                    option 100мм (+ 150 грн )
+                                                    option 120мм (+ 150 грн )
+                                                    option 100мм (+ 150 грн )
+
+                                            button(type="submit" class="btn btn-info") В кошик   
+                        p(class="_ex_des") Дерево + МДФ, висота дверного полотна 2000мм.
+                        p(class="_ex_des") Lorem ipsum dolor sit amet. Necessitatibus saepe eveniet, ut labore. Veritatis et quas molestias excepturi. Vel illum, qui dolorem ipsum, quia voluptas assumenda. Quod maxime placeat, facere possimus, omnis dolor sit, amet consectetur. Voluptatum deleniti atque corrupti, quos dolores et iusto. Eaque ipsa, quae ab illo inventore veritatis et harum. Reprehenderit, qui dolorem eum iure reprehenderit, qui blanditiis
+            ._choose-width
+                p    
+                    input(type="submit" class="btn btn-success" value="Купити")    
+        hr                    
+    br

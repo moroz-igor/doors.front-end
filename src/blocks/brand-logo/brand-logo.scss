@@ -1,0 +1,23 @@
+._brand-logo{
+    font-family: $lora;
+    h2{
+        font-style: italic;
+    }
+    p{
+        padding: 5px 3%;
+        font-size: 18px;
+        text-align: left;
+        font-style: italic;
+
+    }
+}
+._brand-element{
+    max-width: 20%;
+    @media only screen and(max-width: 570px){
+        max-width: 33%;
+    }
+    img{
+        width: 100%;
+        height: auto;
+    }
+}

@@ -1,0 +1,166 @@
+._basket_overall{
+    width: 95%;
+    max-width: 1200px;
+    margin: 0 auto;
+    h2{
+        text-align: center;
+        font-style: italic;
+    }
+}
+._basket-summ{
+    text-align: right;
+    font-size: 20px;
+    color: green;
+    font-style: italic;
+    p{
+        padding: 5px;
+    }
+}
+._basket-buttons{
+    padding-left: 45%;
+    @media only screen and(max-width: 600px){
+        padding-left: 0%;
+    }
+    div{
+        display: table-cell;
+        padding: 5px;
+        width: 50%;
+        a{
+            border-radius: 0;
+            @media only screen and(max-width: 600px){
+                font-size: 12px;
+            }
+        }
+    }
+}
+._basket-table__titles{
+    font-size: 16px;
+    padding: 5px;
+    padding-left: 10px;
+    background-color: white;
+    font-style: italic;
+    border: solid 1px #C9C9C9;
+    @media only screen and(max-width: 900px){
+        font-size: 14px;
+    }
+    @media only screen and(max-width: 600px){
+        font-size: 12px;
+        padding-left:0;
+        text-align: center;
+    }
+    @media only screen and(max-width: 375px){
+        font-size: 10px;
+    }
+}
+._basket-element{
+    background-color: #F5F5F5;
+    margin-top: 1%;
+    border: solid 1px #A8A8A8;
+}
+._basket-element__container > div{
+        padding:  5px;
+        background-color: #F5F5F5;
+        @media only screen and(max-width: 600px){
+            padding:  1px;
+        }
+ }
+._basket-element__title{
+    font-style: italic;
+    font-size: 16px;
+    color: green;
+    padding: 10px;
+    a{
+        @media only screen and(max-width: 325px){
+            font-size: 12px;
+
+        }
+    }
+ }
+  ._basket-element__img{
+      margin-left: -2px;
+      margin-right: -2px;
+      text-align: center;
+       background-color: white;
+       padding: 5px;
+       height: 100px;
+       border: solid 1px #C9C9C9;
+      img{
+          width: 50%;
+          height: auto;
+      }
+
+  }
+  ._basket-element__block{
+      height: 100px;
+      background-color: white;
+      position: relative;
+      border: solid 1px #C9C9C9;
+      @media only screen and(max-width: 600px){
+        height: 50px;
+        position: static;
+        padding-top: 10px;
+     }
+     div{
+        text-align: center;
+        padding-top: 30px;
+        @media only screen and(max-width: 600px){
+             padding-top: 0;
+        }
+            div{
+                display: inline;
+                margin: 0;
+
+                input{
+                    width: 30%;
+                    outline: 0 !important;
+                    text-align: center;
+                }
+            }
+        }
+        ._basket-amount{
+            border-radius: 0 !important;
+            i{
+                color: #1B6B12;
+            }
+            @media only screen and(max-width: 600px){
+                padding: 1px;
+            }
+        }
+    p{
+        height: 30px;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 20px;
+        margin: auto;
+        font-size: 16px;
+        font-style: italic;
+        button{
+            color: maroon;
+        }
+          @media only screen and(max-width: 900px){
+              font-size: 14px;
+              height: 15px;
+              left: 10px;
+          }
+          @media only screen and(max-width: 600px){
+              font-size: 12px;
+              text-align: center;
+              position: static;
+          }
+          @media only screen and(max-width: 375px){
+              font-size: 10px;
+          }
+        }
+}
+._basket-id{
+    @media only screen and(max-width: 325px){
+        display: none;
+    }
+}
+._basket__amount{
+    @media only screen and(max-width: 325px){
+        width: 50%;
+    }
+
+}

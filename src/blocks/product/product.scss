@@ -1,0 +1,128 @@
+._producrs-container__overall{
+    text-align: center;
+    margin: 0 auto;
+}
+._product-description{
+    text-align: left;
+    //margin-top: -20px;
+}
+._product-sq__img{
+    padding-top: 4%;
+    img{
+        margin-bottom: 4%;
+    }
+}
+._product-container{
+    width: 24%;
+    min-width: 250px;
+    border: solid 1px white;
+    padding: 5px;
+    display: inline-block;
+    font-family: $lora;
+    position: relative;
+    @media only screen and(max-width: 1300px){
+        width: 24%;
+        height: 300px;
+    }
+    @media only screen and(max-width: 1045px){
+        width: 30%;
+    }
+    @media only screen and(max-width: 620px){
+        width: 80%;
+        max-width: 310px;
+        height: 310px;
+    }
+    @media only screen and(max-width: 520px){
+        width: 60%;
+    }
+    @media only screen and(max-width: 420px){
+        width: 75%;
+    }
+    div{
+        float:left;
+        width: 50%;
+        img{
+            width: 90%;
+            height: auto;
+        }
+        p{
+            margin-top: 5px;
+            button{
+                border-radius: 0;
+                font-style: italic;
+                font-size: 12px;
+            }
+            a{
+                border-radius: 0;
+                font-style: italic;
+                font-size: 12px;
+
+            }
+        }
+        span[class=_basket-sum]{
+            color: #008040;
+            font-size: 20px;
+        }
+
+    }
+}
+._product-id{
+    background-color: #337AB7;
+    color: white;
+    text-align: center;
+    padding: 2px;
+    border-radius: 20px;
+    width: 80%;
+    margin: 0 1%;
+}
+._product-brand{
+    font-style: italic;
+    font-weight: bold;
+}
+._product-price{
+    color:#008040;
+    font-size: 20px;
+}
+._product-available{
+    font-size: 12px;
+    background-color: #008040;
+    color:white;
+    padding: 2px;
+    border-radius: 20px;
+    width: 80%;
+    margin: 0 1%;
+    text-align: center;
+    font-style: italic;
+}
+._product-basket{
+    margin-right: 5%;
+}
+._product-basket:hover{
+        text-decoration: none;
+        font-weight: bolder;
+        color: maroon;
+}
+._product-image{
+    //margin-top: -20px;
+}
+._product-ordered{
+    display: none;
+    position: relative;
+    bottom: 200px;
+    left: 20px;
+    width: 80%;
+    transform: rotate(-30deg);
+    color:#00FF40;
+    border: solid 1px #00FF40;
+    margin-top: 5px;
+}
+._product_discount{
+    //display: none;
+    position: absolute;
+    top: 10px;
+    width: 100px;
+    height: 20px;
+    background-color: maroon;
+    color: white;
+
+}

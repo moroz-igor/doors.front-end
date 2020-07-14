@@ -1,0 +1,234 @@
+._exemplar{
+    margin-top: 2%;
+    hr{
+        border-top: solid 1px grey;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+._exemplar-img__container{
+    padding-left: 5%;
+    @media only screen and(max-width: 640px){
+        width: 80%;
+        margin-left: 10%;
+    }
+    ._exemplar-img__main{
+        img{
+            width: 100%;
+            height: auto;
+        }
+    }
+}
+._exemplar-des__container{
+    @media only screen and(max-width: 640px){
+        width: 80%;
+        margin-left: 10%;
+    }
+}
+._exemplar-img__small{
+    div{
+        text-align: center;
+        padding: 3%;
+        margin-top: 2%;
+        font-size: 30px;
+        color: #CFCFCF;
+        border: solid 1px white;
+    }
+    div:hover{
+        opacity: 0.8;
+        color: white;
+        cursor: pointer;
+        background-color: #D2D2D2;
+        color: maroon;
+    }
+    div:active{
+        background-color: #EFB1A5;
+        border: solid 1px white;
+        color: white;
+    }
+}
+._ex_reloader{
+    display: none;
+    height: 50px;
+    text-align: center;
+    padding: 3%;
+    margin-top: 1px;
+    margin-bottom: 7%;
+    font-size: 12px;
+    color: grey;
+    width: 100%;
+}
+._ex_reloader:hover{
+    opacity: 0.8;
+    color: white;
+    cursor: pointer;
+    color: red;
+    text-shadow: 0 0 20px black;
+}
+._ex_reloader:active{
+    background-color: #EFB1A5;
+    border: solid 1px white;
+    color: white;
+}
+._ex_arrow:active{
+    background-color: #EFB1A5;
+    border: solid 1px white;
+    color: white;
+}
+._ex_slider{
+    padding-left: 45%;
+    button{
+        text-align: center;
+        padding: 3%;
+        //margin-top: 1px;
+        margin-bottom: 7%;
+        font-size: 20px;
+        color: #CFCFCF;
+        border: solid 1px white;
+        width: 100%;
+        outline: 0 !important;
+
+    }
+    ._ex_arrow:hover{
+        opacity: 0.8;
+        color: white;
+        cursor: pointer;
+        background-color: #D2D2D2;
+        border: solid 1px white;
+        color: maroon;
+    }
+    ._ex_arrow:active{
+        background-color: #EFB1A5;
+        border: solid 1px white;
+        color: white;
+    }
+}
+._ex-slider__element{
+    margin-top: 5px;
+    img{
+        width: 100%;
+        height: auto;
+        margin: 1%;
+    }
+}
+._hide{
+    height: 0;
+    img{
+        height: 0;
+    }
+}
+
+._additionally{
+    border: solid 1px linen;
+    padding: 2%;
+    background-color: #EBEBEB;
+    height: 450px;
+    margin-top: 2%;
+    font-style: italic;
+    max-width: 400px;
+    .panel{
+        border-color: white;
+        border-radius: 0;
+        margin: 2%;
+    }
+    select{
+        outline: 0;
+        border: solid 1px linen;
+        padding: 1%;
+        margin: 2% 2% 2% 10%;
+        option{
+            outline: 0;
+            border: solid 1px linen;
+            outline: 0 !important;
+        }
+    }
+    .panel-title{
+        height: 25px;
+
+        div{
+            width: 48%;
+            display: inline-block;
+            i{
+                color: green;
+            }
+        }
+        :last-child{
+            text-align: right;
+        }
+        h4{
+            color: $id-color;
+        }
+        a{
+            text-decoration: none;
+            margin-top: 0;
+        }
+    }
+}
+select{
+    outline: 0 !important;
+}
+._ex_id{
+    background-color: $id-color;
+    border-radius: 15px;
+    width: 150px;
+    margin: 5px 10%;
+    padding: 5px 40px;
+    color: white;
+    font-size: 16px;
+    font-style: italic;
+}
+._ex_price{
+    font-family: $lora;
+    font-size: 20px;
+    font-style: italic;
+}
+._ex_parameters{
+    font-style: italic;
+    font-family: $lora;
+    font-size: 16px;
+}
+._ex_price span{
+    font-size: 30px;
+    color: green;
+}
+._ex_des{
+    font-family: $lora;
+    font-style: italic;
+    padding: 2%;
+}
+._choose-width{
+    text-align: center;
+    p{
+        font-style: italic;
+        color: $id-color;
+        font-family: $lora;
+        font-size: 20px;
+        margin: 20px;
+    }
+    span{
+        margin: 5%;
+        @media only screen and(max-width: 640px){
+            margin: 1%;
+        }
+        input[name="width-door"]{
+            color: maroon;
+            height: 25px;
+            width: 25px;
+
+        }
+    }
+}
+._ordered-cart{
+    //display: none;
+    position: relative;
+    bottom: 350px;
+    left: 20px;
+    width: 80%;
+    transform: rotate(-30deg);
+    color:#00FF40;
+    border: solid 1px #00FF40;
+    margin-top: 5px;
+    text-align: center;
+    padding: 3%;
+}

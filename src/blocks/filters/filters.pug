@@ -1,0 +1,64 @@
+mixin filters
+    section(class="_filters")
+        h3 Фільтри
+        div
+            form
+                label
+                    input(class="cb pristine" type="checkbox")
+                    span Двері глухі
+                label
+                    input(class="cb pristine" type="checkbox") 
+                    span Двері із стіклом
+                label
+                    input(class="cb pristine" type="checkbox") 
+                    span Акційні
+                label(class="_selection-filters")    
+                    select
+                        option WDS
+                        option Термінус
+                        option Вікнарьоф
+                        option Новий стиль
+                label(class="_selection-filters")   
+                    select
+                        option дерево світле
+                        option дерево темне
+                        option білий
+                        option сірий
+                        option червоний
+                        option коричневий
+                        option жовтий
+                        option синій
+                p(class="_submit-filters")
+                    button(class="btn btn-info" type="submit")  Застосувати фільтри    
+mixin filters-windows
+    section(class="_filters")
+        h3 Фільтри
+        div
+            form
+                label
+                    input(class="cb pristine" type="checkbox")
+                    span 3 камери
+                label
+                    input(class="cb pristine" type="checkbox") 
+                    span 4 камери
+                label
+                    input(class="cb pristine" type="checkbox") 
+                    span 5 камер
+                label
+                    input(class="cb pristine" type="checkbox") 
+                    span 6 камер
+                label(class="_selection-filters")    
+                    select
+                        option WDS
+                        option Veka
+                        option Вікнарьоф
+                label(class="_selection-filters")   
+                    select
+                        option горіх
+                        option золотий дуб
+                        option сірий антрацит
+                        option сірий
+                        option темний дуб
+                p(class="_submit-filters")
+                    button(class="btn btn-info" type="submit")  Застосувати фільтри    
+            

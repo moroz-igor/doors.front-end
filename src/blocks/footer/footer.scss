@@ -1,0 +1,122 @@
+footer{
+    .row{
+        margin-left:0;
+        margin-right: 0;
+    }
+    div{
+        background-image: url(../img/footer/38559.jpg);
+        height: 200px;
+        font-size: 20px;
+        font-family: $lora;
+        padding-top: 10px;
+        p{
+            padding: 1px 10px;
+            color: linen;
+            a{
+                padding: 2px;
+                color: maroon;
+                i:hover{
+                    color: yellow;
+                }
+            }
+        }
+    }
+}
+._footer-logo{
+    background-image: none;
+    text-align: center;
+}
+._footer-info{
+    font-size: 12px;
+    font-style: italic;
+}
+._footer-contacts{
+    font-size: 24px;
+}
+._our-location{
+    width: 100%;
+    height: 300px;
+    border-top: solid 2px  #84CBFF;
+    border-left: 0 !important;
+    border-right: 0 !important;
+    border-bottom: 0 !important;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Russo+One);
+.logotype1,
+.logotype1:hover,
+.logotype1 div {
+    position:relative;
+    display:inline-block;
+    font-size:36px;
+    color:#337AB7;
+    text-shadow: 2px 4px 3px rgba(0,0,0,0.2);
+    font-family: 'Russo One', sans-serif;
+    font-weight: 300;
+    text-decoration:none;
+    margin:20px 0 20px 26px;
+    line-height:16px;
+}
+.logotype1 div {
+    display:block;
+}
+.logotype1 b {
+    letter-spacing:1px;
+    font-size:44px;
+    color:#1C84D0;
+    -webkit-text-stroke: 1px #BDE1FF;
+    text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+    font-weight: 600;
+    padding: 5px;
+    background: #FFF;
+}
+.logotype1 span {
+    text-shadow: 1px 2px 1px rgba(0,0,0,0.2);
+    display:block;
+    float:right;
+    font-size:20px;
+    color:#579EE6;
+    line-height:6px;
+}
+.logotype1:before {
+    position:absolute;
+    top:-12px;
+    left:0;
+    content: "";
+    border:8px solid #BDE1FF;
+    width:66px;
+    height:66px;
+    border-radius:100%;
+    transition: all 0.3s ease;
+    z-index:-1;
+    box-sizing: content-box;
+}
+.logotype1:hover:before {
+    transform: scale(1.1);
+    border:8px solid #1C84D0;
+}
+@media (max-width:600px) {
+    .logotype1,
+    .logotype1:hover,
+    .logotype1 div {
+        font-size:26px;
+        line-height:6px;
+        margin:20px 0 20px 20px;
+    }
+    .logotype1 b {
+        font-size:34px;
+    }
+    .logotype1 span {
+        font-size:16px;
+        line-height:4px;
+    }
+    .logotype1:before {
+        top:-9px;
+        border:6px solid #BDE1FF;
+        width:52px;
+        height:52px;
+    }
+    .logotype1:hover:before {
+        border:6px solid #1C84D0;
+    }
+}

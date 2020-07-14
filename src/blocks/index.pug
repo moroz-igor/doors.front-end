@@ -1,0 +1,23 @@
+include head/head
+include header/header
+include navigator/navigator
+include actions/actions
+include isotop/isotop
+include content-main/content-main
+include brand-logo/brand-logo
+
+include content/content
+include footer/footer
+include anchor/anchor
+
+doctype html
+html(lang="zxx")
+    head
+        +head("ukr.doors", "main", "isotop")
+
+    body
+        +content
+        script( src="https://code.jquery.com/jquery-3.1.1.min.js")
+        script(src ="js/bootstrap.js")    
+        script(src ="js/main.js")    
+        script(src ="js/isotop-docs.js?6")    

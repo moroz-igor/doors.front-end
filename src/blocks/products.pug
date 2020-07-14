@@ -1,0 +1,24 @@
+include head/head
+include header/header
+include headers/headers
+include navigator/navigator
+include search/search
+include filters/filters
+include product/product
+include pagination/pagination
+
+include products-content/products-content
+include footer/footer
+include anchor/anchor
+doctype html
+html(lang="zxx")
+    head
+        +head("ukr.doors.products", "products")
+
+    body
+        +products-content
+        
+        script( src="https://code.jquery.com/jquery-3.1.1.min.js")
+        script(src ="js/bootstrap.js")    
+        script(src ="js/libs.min.js")    
+        script(src ="js/main.js")      

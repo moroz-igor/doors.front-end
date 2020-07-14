@@ -1,0 +1,24 @@
+mixin modal
+    ._modal
+        h1 MODAL
+        ._modal-window
+        
+            button(class="btn btn-primary" type="button" data-toggle="modal" data-target="#modal-1")
+                |Open the modal window 
+            div(class="modal fade" id="modal-1" )
+                div(class="modal-dialog modal-lg")
+                    div(class="modal-content")
+                        div(class="modal-header")
+                            button(class="close" type="button" data-dismiss="modal")
+                                i(class="fa fa-close")
+                            h4(class="modal-title")
+                                |It's name of the modal window
+                            div(class="modal-body")
+                                p This is a modal window
+                            div(class="modal-body")
+                                p This is a modal window
+                            div(class="modal-footer")
+                            button(class="btn btn-danger" type="button" data-dismiss="modal")
+                                |Close the window
+            
+        ._modal-flash

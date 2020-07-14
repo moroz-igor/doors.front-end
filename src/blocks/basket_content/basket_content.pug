@@ -1,0 +1,99 @@
+mixin basket_titles
+    .container-fluid 
+        .row(class="_basket-element__container")
+            div(class="col-sm-1 hidden-xs")
+                p(class="_basket-table__titles") №
+            div(class="col-sm-1 hidden-xs")
+                p(class="_basket-table__titles") Фото
+            div(class="col-sm-2 col-xs-2 _basket-id") 
+                p(class="_basket-table__titles")
+                    |id
+            div(class="col-sm-3 col-xs-4 _basket__amount") 
+                p(class="_basket-table__titles")
+                    |Кількість
+            div(class="col-sm-2 col-xs-2") 
+                p(class="_basket-table__titles")
+                    |Ціна
+            div(class="col-sm-2 col-xs-2") 
+                p(class="_basket-table__titles")
+                    |Сумма
+            div(class="col-sm-1 col-xs-2") 
+                p(class="_basket-table__titles")
+                    i(class="fa fa-trash-o trash")
+mixin basket_element (_num, _id, _am, _price, _sum)                   
+    ._basket-element
+        ._basket-element__title
+            span= _num + ") "
+            a(href="#")
+                | Двері Вензель золота вільха
+        +basket_titles            
+        .container-fluid 
+            .row(class="_basket-element__container")
+                div(class="col-sm-1 hidden-xs") 
+                    ._basket-element__block 
+                        p= _num
+                div(class="col-sm-1 hidden-xs")
+                    ._basket-element__img
+                        img(src="img/products/doors/d-"+_id+"/"+_id+"_1.jpg" alt="_basket-element_1")
+                div(class="col-sm-2 col-xs-2 _basket-id") 
+                    ._basket-element__block
+                        p= _id
+                div(class="col-sm-3 col-xs-4 _basket__amount") 
+                    ._basket-element__block
+                        div
+                            button(id= _id + "-b-down" class="_basket-amount")
+                                i(class="fa fa-minus-square" aria-hidden="true")
+                            div
+                                input(type="text" class="_basket-amount-"+_id id="_amount-"+_id value= _am)
+                            button(id= _id + "-b-up" class="_basket-amount")
+                                i(class="fa fa-plus-square" aria-hidden="true")
+                div(class="col-sm-2 col-xs-2")
+                    ._basket-element__block 
+                        p= _price + " грн"
+                div(class="col-sm-2 col-xs-2") 
+                    ._basket-element__block
+                        p= _sum + " грн"
+                div(class="col-sm-1 col-xs-2") 
+                    ._basket-element__block
+                        p
+                            button
+                                i(class="fa  fa-trash-o ")
+mixin basket_content
+    main 
+        + navigator
+        +headers("UkrDoors", "Ваш кошик")
+        section(class = "_basket_overall")
+            h2 Ви вибрали товари в кількості 1 шт.
+            div
+                ._basket-summ
+                    p Всього: 
+                        span 2000 грн.
+                ._basket-buttons
+                    div
+                        div
+                            a(href="#" class="btn btn-default") Перерахувати
+                        div
+                            a(href="#" class="btn btn-default") Очистити
+                        div
+                            a(href="#" class="btn btn-danger") Оформити 
+                +basket_element("1", "00001", "1", "1256", "4180")                            
+                +basket_element("2", "00002", "2", "1200", "2400")                            
+                +basket_element("3", "00003", "3", "1200", "2400")                            
+                            
+            div
+                ._basket-summ
+                    p Всього: 
+                        span 2000 грн.
+                ._basket-buttons
+                    div
+                        div
+                            a(href="#" class="btn btn-default") Перерахувати
+                        div
+                            a(href="#" class="btn btn-default") Очистити
+                        div
+                            a(href="#" class="btn btn-danger") Оформити 
+            br
+            br
+        +footer("Ми на мапі: ")
+
+    

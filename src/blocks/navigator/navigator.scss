@@ -1,0 +1,81 @@
+._main-navbar{
+    margin-bottom: 0;
+    border: none;
+}
+.logo{
+    max-width: 150px;
+    opacity: 0.7;
+    float: left;
+    img{
+        width: 100%;
+        height: auto;
+    }
+}
+._main-navigator-pages{
+    padding-top: 6px;
+    padding-bottom: 6px;
+    display: block;
+    float: left;
+}
+._main-navigator-pages:hover{
+    background-color: #E4E4E4;
+}
+._main-navigator-pages>a{
+        font-size: 25px;
+        font-style: italic;
+        color: grey;
+        font-family: "Lora";
+            @media only screen and(max-width: 750px){
+                font-size: 22px;
+            }
+}
+._basket{
+    text-align: right;
+    padding-top: 1%;
+    @media only screen and(max-width: 770px){
+        padding: 2%;
+    }
+
+    p{
+        font-weight: bold;
+        font-style: italic;
+        color: grey;
+    }
+    span{
+        color: #008080;
+    }
+}
+._gumburger{
+    text-align: right;
+    padding-right: 6%;
+    padding-top: 1%;
+}
+._gumburger>button{
+    display: none;
+        @media only screen and(max-width: 767px){
+            display: block;
+            width: 160px;
+            margin: 0 auto;
+            font-size: 22px;
+            font-style: italic;
+            border: none;
+            color: #0080C0;
+            background-color: #E8E8E8;
+        }
+        i{
+            color: teal;
+        }
+}
+#main_navigator{
+    @media only screen and(max-width: 450px){
+        background-color: #EEEAE6;
+    }
+._dropdown-point{
+    font-style: italic;
+    margin: 1px;
+    font-size: 16px;
+    a{
+        color: #00496C;
+    }
+}
+}

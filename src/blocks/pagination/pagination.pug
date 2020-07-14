@@ -1,0 +1,37 @@
+mixin pagination-arrows
+    ._pagination-arrows
+        nav 
+            ul
+                li
+                    a(href="/") &larr; назад
+                li
+                    a(href="/") вперед &rarr;
+mixin pagination
+    ._pagination
+        .container
+            nav(class="text-center")
+                ul(class="pagination pagination-sm")
+                    li(class="disabled")
+                        a(href="/")
+                            i(class="fa fa-chevron-left")
+                            i(class="fa fa-chevron-left")
+                    li(class="disabled")
+                        a(href="/")
+                            i(class="fa fa-chevron-left")
+                    li(class="active")
+                        a(href="/") 1
+                    li
+                        a(href="/") 2
+                    li
+                        a(href="/") 3
+                    li
+                        a(href="/") 4
+                    li
+                        a(href="/") 5
+                    li(class="disabled")
+                        a(href="/")
+                            i(class="fa fa-chevron-right")
+                    li(class="disabled")
+                        a(href="/")
+                            i(class="fa fa-chevron-right")
+                            i(class="fa fa-chevron-right")

@@ -1,0 +1,46 @@
+._about-us{
+    font-family: $lora;
+    width: 90%;
+    margin:  0 auto;
+    h2{
+        text-align: center;
+
+    }
+    h3{
+        font-style: italic;
+    }
+    ._c-img{
+        width: 30%;
+        float: left;
+        margin: 20px;
+        @media only screen and(max-width: 600px){
+            width: 100%;
+            float: none;
+            margin: 0;
+        }
+        img{
+            width: 100%;
+            height: auto;
+        }
+    }
+    ._c-content{
+        font-style: italic;
+        font-size: 18px;
+        text-align: justify;
+        @media only screen and(max-width: 600px){
+            font-size: 14px;
+        }
+
+    }
+}
+._adress{
+    font-size: 25px;
+    font-style: italic;
+    color: $id-color;
+    font-weight: bold;
+    span{
+        font-size: 14px;
+        color: maroon;
+    }
+
+}

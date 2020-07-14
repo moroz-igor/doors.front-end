@@ -1,0 +1,49 @@
+mixin product_exemple(_folder, _des, _name, _img1, _img2, _sale)
+    ._product-container
+        p(class =" " + _sale + " ") Знижка
+        ._product-image(class="_product-sq__img")
+                if _img1
+                    img(src="img/products/"+_folder+"/"+_des+"-"+_img1+"/"+_img1+"_1.jpg" alt="_product-" + _img1)
+                if _img2
+                    img(src="img/products/"+_folder+"/"+_des+"-"+_img2+"/"+_img2+"_2.jpg" alt="_product-" + _img2)
+                p(class="_product-ordered") B кошику
+                br
+                p(class="_product-ordered") Замовлено
+        ._product-description
+            h4= _name 
+            p(class="_product-id") id: 
+                span 00001
+            p(class="_product-available") В наявності
+                
+            p(class="_product-price") 1256 грн
+            p(class="_product-brand") Новий стиль
+            a(href="/" class="_product-basket") Кошик 
+                span(class="_basket-sum") 0
+            p    
+                button(class="btn btn-default") В кошик
+            p    
+                a(href="product-model.html" class="btn btn-default") Детально
+
+mixin product(_folder, _des, _name, _img1, _sale)
+    ._product-container
+        p(class =" " + _sale + " ") Знижка
+        ._product-image
+            if _img1
+                img(src="img/products/"+_folder+"/"+_des+"-"+_img1+"/"+_img1+"_1.jpg" alt="_product-" + _img1)
+            p(class="_product-ordered") B кошику
+            br
+            p(class ="_product-ordered") Замовлено
+        ._product-description
+            h4= _name 
+            p(class="_product-id") id: 
+                span 00001
+            p(class="_product-available") В наявності
+            
+            p(class="_product-price") 1256 грн
+            p(class="_product-brand") Новий стиль
+            a(href="/" class="_product-basket") Кошик 
+                span(class="_basket-sum") 0
+            p    
+                button(class="btn btn-default") В кошик
+            p    
+                a(href="product-model.html" class="btn btn-default") Детально

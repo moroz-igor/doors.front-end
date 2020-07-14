@@ -1,0 +1,53 @@
+mixin navigator()
+    .container
+        .row
+            .navbar(class="_main-navbar")
+                .navbar-header
+                    a(href="index.html")
+                        .logo
+                            img(src="img/logo/logo1.png" alt="logo")
+                    ._gumburger  
+                        button(type="button"
+                            class="navbar-toggle"
+                            data-toggle="collapse"
+                            data-target="#main_navigator" )
+                                i(class="fa fa-align-justify")
+                div(class="collapse navbar-collapse" id="main_navigator")
+                    ul(class="nav navbar-nav")
+                        li(class="dropdown _main-navigator-pages")
+                            a(href="index.html") Головна
+                        li(class="dropdown _main-navigator-pages")
+                            a(href="pruducts.html" class="dropdown-toggle" data-toggle="dropdown") Двері
+                                b(class="caret")
+                            ul(class="dropdown-menu")
+                                li(class="_dropdown-point")
+                                    a(href="products.html") Двері вхідні
+                                li(class="_dropdown-point")
+                                    a(href="products.html") Двері міжкімнатні
+                        li(class="dropdown _main-navigator-pages")
+                            a(href="#" class="dropdown-toggle " data-toggle="dropdown") Вікна
+                                b(class="caret")
+                            ul(class="dropdown-menu")
+                                li(class="_dropdown-point")
+                                    a(href="sqproducts.html") Вікна металопластикові
+                        li(class="dropdown _main-navigator-pages")
+                            a(href="#" class="dropdown-toggles" data-toggle="dropdown") Фурнітура
+                                b(class="caret")
+                            ul(class="dropdown-menu")
+                                li(class="_dropdown-point")
+                                    a(href="№") Замки
+                                li(class="_dropdown-point")
+                                    a(href="#") Ручки
+                                li(class="_dropdown-point")
+                                    a(href="#") Шпінгалети
+                                li(class="_dropdown-point")
+                                    a(href="#") Дверні петлі
+                                li(class="_dropdown-point")
+                                    a(href="user.html") User
+                        li(class="dropdown _main-navigator-pages")
+                            a(href="contacts.html" class="") Контакти
+                    ._basket
+                        p У кошику
+                        a(href="basket.html")
+                            i(class="fa fa-2x fa-shopping-cart" aria-hidden="true")  
+                                span 0

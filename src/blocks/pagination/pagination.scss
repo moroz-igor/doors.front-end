@@ -1,0 +1,23 @@
+._pagination-arrows{
+    margin-bottom: 10px;
+    ul{
+        li{
+            display: inline-block;
+            border-radius: 15px;
+            padding: 5px 20px;
+            width: 120px;
+            text-align: center;
+            background-color: #337AB7;
+            a{
+                color: white;
+                text-decoration: none;
+            }
+        }
+        li:hover{
+            background-color: white;
+            a{
+                color: #337AB7;
+            }
+        }
+    }
+}

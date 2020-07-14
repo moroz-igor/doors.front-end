@@ -1,0 +1,35 @@
+body, div, p{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: #e6e6e6 url('../img/body/bg.png') 0 0 repeat;
+    h1{
+        font-size: 40px;
+    }
+}
+main{
+    margin: 0 auto;
+    max-width: 2048px;
+}
+.font-aldrich{ font-family: 'Aldrich';}
+.font-italic{ font-style: italic;}
+._page-description{
+    max-width: 90%;
+    margin: 0 auto;
+    font-style: italic;
+    font-size: 18px;
+    font-family: $lora;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    color: #004080;
+        @media only screen and(max-width: 420px){
+            font-size: 12px;
+            padding-top: 2%;
+            padding-bottom: 2%;
+
+        }
+}
+._none{
+    display: none;
+}

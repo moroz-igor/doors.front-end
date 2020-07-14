@@ -1,0 +1,20 @@
+include head/head
+include header/header
+include headers/headers
+include navigator/navigator
+include basket_content/basket_content
+
+
+include footer/footer
+include anchor/anchor
+doctype html
+html(lang="zxx")
+    head
+        +head("ukr.doors.basket", "basket")
+
+    body
+        +basket_content
+        
+        script(src ="js/libs.min.js")    
+        script(src ="js/bootstrap.js")    
+        script(src ="js/basket.js")    

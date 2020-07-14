@@ -1,0 +1,15 @@
+mixin headers (name, page)
+    header(class="_header")
+        .container
+            div(class="row")
+                div(class="site-titles col-lg-6 col-md-6 col-xs-6 col-sm-6")
+                    h2= name
+                    h1= page
+                div(class="col-lg-3 col-md-3 col-xs-3 col-sm-3 _popular") 
+                    h2 Ви не увійшли
+                    a(href="#")
+                        p(class="font-aldrich font-italic") Вхід
+                    a(href="#")
+                        p(class="font-aldrich font-italic") Реєстрація
+                            
+        br   

@@ -1,0 +1,101 @@
+/** Close button **/
+._close-actions{
+    padding: 5px;
+    background-color: #F4F4F4;
+    margin-bottom: -40px;
+    div{
+        max-width: 40px;
+    }
+}
+.cl-btn-7 {
+    width: 40px;
+    height: 40px;
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+}
+.cl-btn-7:before {
+    content: '+';
+    color: silver;
+    position: absolute;
+    z-index: 2;
+    transform: rotate(45deg);
+    font-size: 50px;
+    line-height: 1;
+    top: -5px;
+    left: 5px;
+    transition: all 0.3s cubic-bezier(0.77, 0, 0.2, 0.85);
+}
+.cl-btn-7:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    background: red;
+    z-index: 1;
+    transition: all 0.3s cubic-bezier(0.77, 0, 0.2, 0.85);
+    transform: scale(0.01);
+}
+.cl-btn-7:hover:after {
+    transform: scale(1);
+}
+.cl-btn-7:hover:before {
+    transform: scale(0.8) rotate(45deg);
+    color: #fff;
+}
+/* - Action content -*/
+._actions-content{
+    text-align: center;
+    font-family: "lora";
+    font-style: italic;
+    background-color: #F4F4F4;
+    padding: 10px;
+    color: #0080FF;
+    @media only screen and(max-width: 420px){
+        padding-top: 20px;
+    }
+
+    h2{
+        font-size: 50px;
+    }
+    a{
+        text-decoration: none;
+    }
+    a>h3{
+        color: #008080;
+    }
+    a>h3:hover{
+        color: red;
+        background-color: #EAFFEF;
+    }
+}
+/* actions ranning string */
+._actions-marquee{
+width:100%;
+white-space:nowrap;
+overflow:hidden;
+background-color: #5A606C;
+padding: 5px 0;
+}
+
+._actions-marquee span {
+color: linen;
+font-style: italic;
+font-size:25px;
+display:inline-block;
+padding-left:100%;
+-webkit-animation: _actions-marquee 10s infinite linear;
+animation: _actions-marquee 20s infinite linear;
+}
+
+@-webkit-keyframes _marquee {
+0%{-webkit-transform: translate(0, 0);}
+100%{-webkit-transform: translate(-100%, 0);}
+}
+@keyframes _actions-marquee{
+0%{transform: translate(0, 0);}
+100%{transform: translate(-100%, 0)}
+}

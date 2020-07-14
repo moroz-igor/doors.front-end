@@ -1,0 +1,19 @@
+include head/head
+include header/header
+include headers/headers
+include navigator/navigator
+include contacts/contacts
+
+
+include footer/footer
+include anchor/anchor
+doctype html
+html(lang="zxx")
+    head
+        +head("ukr.doors.products", "contacts")
+
+    body
+        +contacts
+        
+        script(src ="js/libs.min.js")    
+        script(src ="js/bootstrap.js")    
